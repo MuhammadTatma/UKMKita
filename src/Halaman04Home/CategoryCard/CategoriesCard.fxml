@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="box" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="61.0" prefWidth="141.0" styleClass="shadow" stylesheets="@../Style/coba.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Halaman04Home.CategoryCard.CategoriesCardController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="61.0" prefWidth="51.0">
+         <children>
+            <ImageView fx:id="categoryImage" fitHeight="55.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Image/baju8.png" />
+               </image>
+            </ImageView>
+         </children>
+         <HBox.margin>
+            <Insets bottom="5.0" left="3.0" top="5.0" />
+         </HBox.margin>
+      </VBox>
+      <VBox alignment="CENTER_LEFT" prefHeight="86.0" prefWidth="86.0" spacing="15.0">
+         <children>
+            <Label fx:id="kategoriName" prefHeight="47.0" prefWidth="81.0" text="Peripheral HandPhone" wrapText="true">
+               <font>
+                  <Font name="Comic Sans MS" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</HBox>

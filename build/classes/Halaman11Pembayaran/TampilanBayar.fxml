@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: #14086f;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Halaman11Pembayaran.TampilanBayarController">
+   <children>
+      <AnchorPane layoutX="-16.0" layoutY="-9.0" prefHeight="510.0" prefWidth="258.0" style="-fx-background-color: black;" visible="false">
+         <children>
+            <Label layoutX="26.0" prefHeight="88.0" prefWidth="82.0" text="🠔" textFill="WHITE">
+               <font>
+                  <Font size="60.0" />
+               </font>
+            </Label>
+            <Label layoutX="83.0" layoutY="78.0" prefHeight="51.0" prefWidth="117.0" text="UKM Kita" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB Bold" size="25.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="46.0" fitWidth="39.0" layoutX="58.0" layoutY="446.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/home.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="116.0" layoutY="456.0" text="Beranda" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="266.0" layoutY="14.0" text="Check Out" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfNamaLengkap" layoutX="264.0" layoutY="201.0" prefHeight="26.0" prefWidth="284.0" promptText="Nama Lengkap" />
+      <TextField fx:id="tfNoTelepon" layoutX="265.0" layoutY="248.0" prefHeight="26.0" prefWidth="284.0" promptText="No Telepon" />
+      <TextField fx:id="tfAlamatLengkap" alignment="TOP_LEFT" layoutX="264.0" layoutY="293.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="58.0" prefWidth="284.0" promptText="Alamat Lengkap" />
+      <Line endX="262.0" endY="3.0517578125E-5" layoutX="379.0" layoutY="66.0" startX="-137.39996337890625" startY="4.57763671875E-5" stroke="WHITE" />
+      <AnchorPane layoutX="666.0" layoutY="64.0" prefHeight="319.0" prefWidth="208.0" style="-fx-background-color: white;">
+         <children>
+            <Label fx:id="metodePembayaran" alignment="TOP_LEFT" layoutX="17.0" layoutY="191.0" prefHeight="84.0" prefWidth="175.0" text="pembayaran :" textFill="#121212" wrapText="true">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="pengiriman" layoutX="18.0" layoutY="173.0" onMouseClicked="#tampilMetodePengiriman" prefHeight="19.0" prefWidth="168.0" text="Pengiriman :" textFill="#121212" wrapText="true">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="711.0" layoutY="76.0" text="Rincian Pesanan">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="683.0" layoutY="128.0" text="Total Harga " />
+      <Label fx:id="ringkasanBelanjaHarga" layoutX="786.0" layoutY="128.0" text="Rp.110.000" />
+      <Label layoutX="683.0" layoutY="146.0" text="Biaya Pengiriman" />
+      <Label fx:id="ringkasanBelanjaOngkir" layoutX="838.0" layoutY="146.0" text="-" />
+      <Label layoutX="679.0" layoutY="342.0" text="Total Tagihan">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalTagihan" layoutX="784.0" layoutY="345.0" text="Rp.135.000">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Button layoutX="774.0" layoutY="414.0" mnemonicParsing="false" onAction="#handleButtonBayar" prefHeight="35.0" prefWidth="101.0" text="Bayar">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <VBox layoutX="22.0" layoutY="25.0" prefHeight="440.0" prefWidth="202.0">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0" spacing="5.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="175.0" prefWidth="202.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <ImageView fx:id="ItemGambar" fitHeight="189.0" fitWidth="203.0" pickOnBounds="true" preserveRatio="true" VBox.vgrow="ALWAYS">
+                           <image>
+                              <Image url="@../Image/Screenshot%20(1348).png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </ImageView>
+                     </children>
+                  </VBox>
+                  <HBox prefHeight="30.0" prefWidth="203.0">
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label fx:id="ItemNama" alignment="TOP_LEFT" prefHeight="40.0" prefWidth="203.0" text="nama Item" textFill="WHITE" wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Label fx:id="namaToko" prefHeight="20.0" prefWidth="220.0" text="☑ Toko Laris" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <HBox prefHeight="11.0" prefWidth="203.0">
+                     <children>
+                        <Label fx:id="alamatToko" prefHeight="15.0" prefWidth="267.0" text="Kota Klaten" textFill="WHITE">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="73.0" prefWidth="203.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label fx:id="labelDeskripsi" alignment="TOP_LEFT" prefHeight="83.0" prefWidth="229.0" text="Deskripsi" textFill="WHITE" wrapText="true" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="TOP_RIGHT" prefHeight="59.0" prefWidth="203.0">
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Label alignment="TOP_LEFT" prefHeight="15.0" prefWidth="39.0" text="Jumlah" textFill="WHITE" wrapText="true">
+                                 <font>
+                                    <Font size="9.0" />
+                                 </font>
+                              </Label>
+                              <HBox prefHeight="39.0" prefWidth="97.0" spacing="3.0">
+                                 <children>
+                                    <Button fx:id="btnKurang" mnemonicParsing="false" onAction="#handleButtonKurang" prefHeight="25.0" prefWidth="25.0" text="-" />
+                                    <TextField fx:id="tfjumlah" alignment="CENTER" prefHeight="25.0" prefWidth="39.0" text="1" />
+                                    <Button fx:id="btnTambah" mnemonicParsing="false" onAction="#handleButtonTambah" prefHeight="25.0" prefWidth="25.0" text="+" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="392.0" prefHeight="59.0" prefWidth="203.0">
+                     <children>
+                        <Label text="Sub Total" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Pane prefHeight="44.0" prefWidth="14.0" HBox.hgrow="ALWAYS" />
+                        <Label fx:id="labelTotal" text="Rp.110.00000000" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <ChoiceBox fx:id="ChoiceBoxPembayaran" layoutX="266.0" layoutY="96.0" onMouseClicked="#tampilMetodePembayaran" prefHeight="26.0" prefWidth="159.0" />
+      <Label alignment="TOP_LEFT" layoutX="268.0" layoutY="79.0" prefHeight="15.0" prefWidth="143.0" text="Pilih Metode Pembayaran" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="ChoiceBoxPengiriman" layoutX="267.0" layoutY="147.0" onMouseClicked="#tampilMetodePengiriman" prefHeight="26.0" prefWidth="159.0" />
+      <Label alignment="TOP_LEFT" layoutX="270.0" layoutY="130.0" prefHeight="15.0" prefWidth="101.0" text="Pilih Pengiriman" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Label>
+      <Label layoutX="684.0" layoutY="164.0" text="Biaya Layanan" />
+      <Label fx:id="ringkasanBelanjaOngkir1" layoutX="839.0" layoutY="164.0" text="-" />
+      <Label layoutX="684.0" layoutY="183.0" text="Biaya Layanan" />
+      <Label fx:id="ringkasanBelanjaOngkir11" layoutX="839.0" layoutY="183.0" text="-" />
+      <Label layoutX="684.0" layoutY="221.0" text="Diskon Barang" />
+      <Label fx:id="ringkasanBelanjaOngkir111" layoutX="839.0" layoutY="221.0" text="-" />
+      <Label layoutX="684.0" layoutY="202.0" text="Diskon Pengiriman" />
+      <Label fx:id="ringkasanBelanjaOngkir1111" layoutX="839.0" layoutY="202.0" text="-" />
+      <Line endX="262.0" endY="3.0517578125E-5" layoutX="381.0" layoutY="450.0" startX="-137.39996337890625" startY="4.57763671875E-5" stroke="WHITE" />
+      <Button layoutX="668.0" layoutY="414.0" mnemonicParsing="false" onAction="#handleButtonBayar" prefHeight="35.0" prefWidth="98.0" text="kembali">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label alignment="TOP_LEFT" layoutX="268.0" layoutY="185.0" prefHeight="15.0" prefWidth="101.0" text="Nama " textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_LEFT" layoutX="268.0" layoutY="232.0" prefHeight="15.0" prefWidth="101.0" text="No Telepon" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_LEFT" layoutX="269.0" layoutY="278.0" prefHeight="15.0" prefWidth="101.0" text="Alamat" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Label>
+      <HBox layoutX="676.0" layoutY="108.0" prefHeight="20.0" prefWidth="200.0" spacing="7.0">
+         <children>
+            <Label fx:id="Rincianjumlah" alignment="TOP_RIGHT" contentDisplay="RIGHT" prefHeight="20.0" prefWidth="29.0" text="123" textFill="#121212" wrapText="true">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="ItemNama111" alignment="TOP_LEFT" prefHeight="22.0" prefWidth="4.0" text="x" textFill="#121212" wrapText="true">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="RincianItemNama" prefHeight="20.0" prefWidth="141.0" text="nama Item" textFill="#121212" wrapText="true">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <VBox layoutX="264.0" layoutY="353.0" prefHeight="44.0" prefWidth="283.0" visible="false">
+         <children>
+            <Label alignment="TOP_LEFT" prefHeight="15.0" prefWidth="101.0" text="No Kredit Card" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfNoTelepon1" prefHeight="26.0" prefWidth="284.0" promptText="No Telepon" />
+         </children>
+      </VBox>
+      <VBox layoutX="265.0" layoutY="396.0" prefHeight="44.0" prefWidth="283.0" visible="false">
+         <children>
+            <Label alignment="TOP_LEFT" prefHeight="15.0" prefWidth="119.0" text="Nama pemilik kartu kredit" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfNamaLengkap1" prefHeight="26.0" prefWidth="284.0" promptText="Nama Lengkap" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Halaman05BuatToko.BuatTokoController">
+   <children>
+      <HBox layoutX="227.0" layoutY="259.0" prefHeight="350.0" prefWidth="635.0" style="-fx-background-color: #14086f;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox prefHeight="350.0" prefWidth="683.0" style="-fx-background-color: #14086f;">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="72.0" prefWidth="509.0">
+                     <children>
+                        <Label prefHeight="51.0" prefWidth="247.0" text="Isi Detail Tokomu! " textFill="WHITE">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="72.0" prefWidth="509.0">
+                     <children>
+                        <VBox prefHeight="72.0" prefWidth="364.0" spacing="5.0">
+                           <children>
+                              <Label text="1) Masukkan Nama Toko" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="tfNamaToko" prefHeight="39.0" prefWidth="344.0" promptText="Nama Toko">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="82.0" prefHeight="72.0" prefWidth="509.0">
+                     <children>
+                        <VBox prefHeight="87.0" prefWidth="364.0" spacing="5.0">
+                           <children>
+                              <Label text="2) Masukkan Alamat Toko" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="tfAlamatToko" prefHeight="39.0" prefWidth="344.0" promptText="Alamat Toko">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="154.0" prefHeight="72.0" prefWidth="509.0">
+                     <children>
+                        <VBox prefHeight="72.0" prefWidth="364.0" spacing="5.0">
+                           <children>
+                              <Label text="3) Masukkan No Hp" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="tfNoHpToko" prefHeight="39.0" prefWidth="344.0" promptText="No Hp">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="BOTTOM_CENTER" prefHeight="46.0" prefWidth="509.0">
+                     <children>
+                        <Button fx:id="btnBuatToko" mnemonicParsing="false" onAction="#buatToko" prefHeight="32.0" prefWidth="135.0" style="-fx-background-color: black;" text="Buat Toko" textFill="#ffffff" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

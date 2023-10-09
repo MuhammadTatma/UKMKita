@@ -1,0 +1,51 @@
+.White-background{
+    -fx-background-color: white;
+    
+}
+
+
+
+.blue-background{
+    -fx-background-color: #14086f;
+}
+
+.grey-background{
+    -fx-background-color: gray;
+}
+
+.button-login{
+    -fx-background-color: #33ccff;
+    -fx-background-radius: 25;
+}
+
+.transparent{
+    -fx-background-color: rgba(0,0,0,0);
+}
+
+.round-layout{
+    -fx-border-radius: 50;
+    -fx-border-color: #999999;
+}
+
+.selected{
+    -fx-background-color: #F3F3F3;
+}
+
+.mouse-moved:hover{
+    -fx-background-color: #E4E4E4; 
+}
+
+.mouse-pressed:pressed{
+    -fx-background-color: black;
+}
+
+.shadow{
+    -fx-effect :dropshadow(three-pass-box,rgba(0,0,0,0),10,0,0,10);
+}
+
+
+
+
+.cekGradient{
+    -fx-background-color: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+}
